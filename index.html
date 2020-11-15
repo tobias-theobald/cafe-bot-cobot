@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Café</title>
+        <meta name="application-name" content="Café"/>
+        <meta name="description" content="">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
+    </head>
+    <body>
+        <!-- Your HTML goes here -->
+        <div class="page-header">
+            <h1>Café</h1>
+        </div>
+        <p id="message"></p>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th class="product-name">Product</th>
+                    <th>Net Price</th>
+                    <th>VAT</th>
+                    <th>Gross Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="products-tbody">
+                <tr>
+                    <td class="separator" colspan="5"></td>
+                    <td colspan="5">Loading prices...</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/javascripts/cobot_api.js"></script>
+        <!-- your JS and libraries will be inserted here. you can delete this comment if you want -->
+    </body>
+</html>

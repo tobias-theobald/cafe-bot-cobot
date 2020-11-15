@@ -1,0 +1,33 @@
+// The scss will be compiled and added to the bot.
+// You have access to the following variables, which are based on the space's
+// customizations in case they have a pro plan:
+// $color-primary (-4, -10, -20, -40, -50, -60, -70, -80, -90)
+// $color-seconday (-4, -10, -20, -40, -50, -60, -70, -80, -90)
+// $color-highlight (-4, -10, -20, -40, -50, -60, -70, -80, -90)
+// $color-text
+// $color-background
+// $color-admin-brand
+// the numbers represent color shades, where 90 is darkest and 4 is the brightest
+// so, $color-primary-90 is very dark, $color-primary-4 is very bright
+// this will import the default Cobot SCSS files. Documentation can be found at https://www.cobot.me/styleguide
+@import "cobot_assets/font_awesome_imports";
+@import "cobot_assets/imports";
+h1 {
+    color: $color-primary;
+}
+table.product-table {
+    width: 100%;
+    max-width: 700px;
+}
+th,td {
+    padding: 3px;
+}
+td.separator {
+    height: 16px;
+}
+td.product-name, th.product-name {
+    text-align: left;
+}
+td, th {
+    text-align: right;
+}
