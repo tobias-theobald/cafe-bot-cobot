@@ -39,11 +39,11 @@ You will copy our template, modify it and share it.
 In order for the bot to be able to access your Google Doc, you need to create a key for the Google Docs API.
 
 1. Make sure you're still using the same Google Account as before
-1. Go to the [Google Docs API Quickstart](https://developers.google.com/docs/api/quickstart/js)
-1. Click **Enable the Google Docs API**, give it a name, click **Next**, wait until it finishes, then close the dialog.
-1. Click **Create API key**, give it a name, click **Next**, then **_Take note of that API key_** and click the link to the API Console on that dialog
+1. Go to the [Google Workspace API Create Project Documentation](https://developers.google.com/workspace/guides/create-project)
+1. Follow that guide. When you are supposed to choose an API to enable **Enable the Google Sheets API**
+1. In the [Google Cloud Console's Credentials section|https://console.cloud.google.com/apis/credentials], click **Create Credentials** and choose **API Key**, give it a name, click **Next**, then **_Take note of that API key_** and edit the API key's settings using the pen icon.
 1. Under "Application Restrictions", click **HTTP referrers**, then under "Website Restrictions", click **Add an item**, enter `bots.apps.cobot.me/*` and click **Done**
-1. Under "API restrictions", select **Restrict key**, then in the dropdown, select **Google Docs API**
+1. Under "API restrictions", select **Restrict key**, then in the dropdown, select **Google Sheets API**
 1. If you forgot to note down your API key earlier, do it now. You can find it in the top right.
 
 ## 3. Create Cobot OAuth Client
