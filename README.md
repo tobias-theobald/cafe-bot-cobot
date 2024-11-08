@@ -4,7 +4,7 @@
 
 A simple bot for members to note down their café expenses on the Cobot coworking space management platform. Note that members in this system are trusted to note down their expenses honestly. For example, if you have a fridge with drinks and someone takes something out, they are expected to not it down using this app.
 
-The person installing this bot maintains a table of products to be sold in a [Google Docs Sheet](https://docs.google.com/spreadsheets).
+The person installing this bot maintains a table of products to be sold in a [Google Sheet](https://docs.google.com/spreadsheets).
 
 # How to deploy
 
@@ -12,7 +12,7 @@ The person installing this bot maintains a table of products to be sold in a [Go
 
 The most important thing to keep in mind is probably to which account this is deployed. It might be okay to just use your personal Cobot account, but what happens if you ever leave the coworking space? I'm not saying you shouldn't do it, just saying to keep it in mind. Creating a special account for this that stays with the coworking space might be more work now, but consider if you really want to remember where you deployed this bot once you leave. 
 
-Also, for ease of use, this project uses Google Docs. You might have privacy reservations against it. Then again, it'll only contain your price list. 🤷
+Also, for ease of use, this project uses Google Sheets. You might have privacy reservations against it. Then again, it'll only contain your price list. 🤷
 
 Lastly, this is a very detailed step-by-step guide aimed at non-developers. Unfortunately, these types of guides tend to not stay up-to-date as one of the involved services is bound to change something in their UI. So take the following with a grain of salt if you visit this guide a significant amount of time after its publishing in mid-November 2020 🧂
 
@@ -23,7 +23,7 @@ Lastly, this is a very detailed step-by-step guide aimed at non-developers. Unfo
 1. An app to copy-paste notes. We'll have to note down some secure and complex keys/passwords, so pen and paper are not optimal here
 1. Somewhere between 5 and 15 minutes of time
 
-## 1. Create Google Doc
+## 1. Create Google Sheet
 
 You will copy our template, modify it and share it. 
 
@@ -34,9 +34,9 @@ You will copy our template, modify it and share it.
 1. Set up public sharing of the sheet. Click **Share** in the top right corner, then **Change to anyone with the link** at the bottom, click **Restricted** and select **Anyone with the link**. Make sure the box on the right says "Viewer". Then close the dialog 
 1. **_Take note of your Google Sheet ID_**. You can find it in the URL of your copy of the sheet between the `https://docs.google.com/spreadsheets/d/` and the `/edit...`
 
-## 2. Create Google Docs API Key
+## 2. Create Google Sheets API Key
 
-In order for the bot to be able to access your Google Doc, you need to create a key for the Google Docs API.
+In order for the bot to be able to access your Google Sheet, you need to create a key for the Google Sheets API.
 
 1. Make sure you're still using the same Google Account as before
 1. Go to the [Google Workspace API Create Project Documentation](https://developers.google.com/workspace/guides/create-project)
@@ -99,7 +99,7 @@ Go to the [Cobot Bots](https://bots.apps.cobot.me) page, choose the bot you crea
 
 ## Change some prices
 
-Just edit your [Google Docs Sheet](https://docs.google.com/spreadsheets). The structure should be self-explanatory.
+Just edit your [Google Sheet](https://docs.google.com/spreadsheets). The structure should be self-explanatory.
 
 ## Edit VAT / GST
 
